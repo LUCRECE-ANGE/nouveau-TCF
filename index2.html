@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>index</title>
+</head>
+<body>
+ <header>
+    <nav class="bg-blue-500 ">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-4">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class=" hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <!-- <div class="flex shrink-0 items-center">
+                <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+              </div> -->
+              <h1 class="rounded-md  px-3 py-2 text-sm font-medium text-white" aria-current="page">BIENVENUE A LA FORMATION TCF CANADA</h1>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                
+                  <div class="border-l-2 h-16 p-0 "><a href="#" class="border-l-white rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"><i class="fas fa-graduation-cap"></i>
+                    Formation</a></div>
+                    <div class="border-l-2 h-16 "> <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"><i class="fas fa-tag"></i>TARIFS</a></div>
+                    <div class="border-l-2 h-16 p-0 "><a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white"><i class="fas fa-envelope"></i>
+                    Contactez nous</a></div>
+                    <div class="border-l-2 h-16 p-0 "><div class="absolute inset-y-0 right-0 flex items-center  pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 sm:justify-center items-center">
+                      <i class="fa-brands fa-whatsapp text-white p-2"></i>
+                      <i class="fab fa-youtube text-white p-2"></i>
+                      <i class="fab fa-facebook text-white p-2"></i>
+                      <i class="fab fa-instagram text-white p-2"></i>
+                      <!-- <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <span class="absolute -inset-1.5"></span>
+                      <span class="sr-only">View notifications</span>
+                      <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                      </svg>
+                      </button> -->
+                  </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+      
+              <!-- Profile dropdown -->
+              <div class="relative ml-3">
+                <div>
+                  <!-- <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Open user menu</span>
+                    <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                  </button> -->
+                </div>
+      
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <h1 class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">BIENVENUE A LA FORMATION TCF CANADA</h1>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-graduation-cap"></i>FORMATIONS</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-tag"></i>TARIFS</a>
+            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><i class="fas fa-envelope"></i>CONTACTEZ-NOUS</a>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- <nav class="bg-sky-500 border-solid  h-38 w-full rounded-xl text-white inline-flex justify-between gap-3 justify-center items-center relative md-inline-block">
+        <div class="nom">
+            <p><b>BIENVENUE A LA FORMATION TCF CANADA</b></p>
+        </div>
+        <div class="nav-content">
+            <a href="#">
+                <i class="fas fa-graduation-cap"></i>
+                Formation
+            </a>
+            <a href="Tarif.html">
+                <i class="fas fa-tag"></i>
+                Tarifs
+            </a>
+            <a href="#">
+                <i class="fas fa-envelope"></i>
+                Contactez nous</a>
+        </div>
+        <div class="icones">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </nav> -->
+ </header>
+ <main>
+  <!-- <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Menu Déroulant avec Tailwind CSS</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+
+  <body class="bg-gray-100">
+  
+      <nav class="bg-gray-800 p-4">
+          <ul class="flex space-x-4">
+              <li class="relative group">
+                  <a href="#" class="text-white">Accueil</a>
+              </li>
+              <li class="relative group">
+                  <a href="#" class="text-white">Services</a>
+                  <!-- Menu déroulant -->
+                  <!-- <ul class="absolute left-0 hidden mt-2 space-y-2 bg-gray-700 text-white p-3 group-hover:block">
+                      <li><a href="#" class="block px-4 py-2">Développement</a></li>
+                      <li><a href="#" class="block px-4 py-2">Design</a></li>
+                      <li><a href="#" class="block px-4 py-2">Marketing</a></li>
+                  </ul>
+              </li>
+              <li class="relative group">
+                  <a href="#" class="text-white">À propos</a>
+              </li>
+              <li>
+                  <a href="#" class="text-white">Contact</a>
+              </li> -->
+          <!-- </ul>
+      </nav>
+  
+  </body>
+  </html> -->
+  <div class="flex-row md:flex">
+    <img src="canada.png" alt="" class="md:w-20 md:20">
+    <div class="relative group">
+      <!-- Bouton principal -->
+      <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+        <i class="fas fa-pencil"></i> EXPRESSION ECRITE
+      </a>
+    
+      <!-- Menu déroulant -->
+      <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden group-hover:block ">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <!-- Bouton principal -->
+      <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+        <i class="fas fa-microphone"></i> EXPRESSION ORALE
+      </a>
+    
+      <!-- Menu déroulant -->
+      <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden group-hover:block">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <!-- Bouton principal -->
+      <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+        <i class="fas fa-headphones-alt"></i> COMPREHENSION ORALE
+      </a>
+    </div>
+    <div class="relative group">
+      <!-- Bouton principal -->
+      <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+        <i class="fas fa-book"></i> COMPREHENSION ECRITE
+      </a>
+    </div>
+  </div>
+  <div class="bg-blue-500 m-10 mx-20">
+    <div class="bg-blue-500 w-70 h-90 p-8 text-left">
+        <p>BIENVENUE A VOUS</p>
+        <p>Membre depuis 2024</p>
+    </div>
+    <div class="bg-black text-white h-10 px-4 sm:block md:h-full sm:align-items-center">
+        <a class="px-4" href="#">
+            <i class="fas fa-smile "></i>
+            Bienvenue
+
+        </a>
+        <a class="px-4" href="#">
+            <i class="fas fa-user"></i>
+            Profile Details
+        </a>
+        <a class="px-4" href="#">
+            <i class="fas fa-clipboard-list"></i>
+            Subscriptions
+
+        </a>
+        <a class="px-4" href="#">
+            <i class="fas fa-shopping-cart"></i>
+            Orders
+
+        </a>
+        <a class="px-4" href="#">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+
+        </a>
+    </div>
+</div>
+<p class="text-center text-bold fs-2xl">Bienvenue</p>
+<!-- <div class="inscrire">
+    <a href="formulaire_inscription.html">S'inscrire</a>
+</div> -->
+<button class="bg-sky-500 hover:bg-sky-700 rounded-full ml-3 mr-3 px-4 py-2 x-screen w-90 ">
+  <a href="formulaire_inscription.html" class="flex items-center justify-center x-screen">S'inscrire</a>
+</button>
+<div class="flex bg-blue-500 text-white mt-8 p-0 ">
+    
+    <div class="w-90 px-8 py-2">
+        <ul>
+            <h2><b>Les pages</b></h2>
+            <li class="border-b-2"><a href="index.html"> <i class="fas fa-home"></i>PAGE D'ACCUEIL</a></li>
+            <li class="border-b-2"><a href="#"><i class="fas fa-book"></i>COMPREHENSION ECRITE</a></li>
+            <!-- <li><a href="#"><i class="fas fa-headphones-alt">COMPREHENSION ORALE</a></li> -->
+            <li class="border-b-2"><a href="#"><i class="fas fa-pencil"></i>EXPRESSION ECRITE</a></li>
+            <li class="border-b-2"><a href="#"><i class="fas fa-microphone"></i>EXPRESSION ORALE</a></li>
+            <li class="border-b-2"><a href="#" class="politique">POLITIQUE DE REMBOURSEMENT</a></li>
+            
+        </ul>
+    </div>
+    <div class="w-90 px-3">
+        <ul>   
+            <li class="border-b-2"><a href="#"><i class="fas fa-shield-alt"></i>POLITIQUE DE CONFIDENTIALITE</a></li>
+            
+            <li class="border-b-2"><a href="#"><i class="fas fa-blog"></i>BLOG</a></li>
+            <li ><a href="#">PARAMETRES DE COMPTE</a></li>
+        </ul>
+                <div class="">
+                    <span ><a href="Test.html" id="li"><i class="fas fa-sign-in-alt"></i>SECONNECTER</a></span>
+
+                    <span><a href="formulaire_inscription.html" id="li"><i class="fas fa-user-plus"></i>S'INSCRIRE</a></span>
+                    
+                    <span><a href="#" id="li"><i class="fas fa-lock"></i>MOTDEPASSE</a></span>
+                </div>
+    </div>
+    <div class="w-90 px-3">
+    
+            <h2>Nos reseaux sociaux</h2>
+            <div class="reseaux">    
+                <!-- <img src="https://cdn.icon-icons.com/icons2/642/PNG/128/facebook_icon-icons.com_59205.png" alt="">
+                <img src="https://cdn.icon-icons.com/icons2/1907/PNG/128/iconfinder-youtube-4555888_121363.png" alt="">
+                <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="">
+                <img src="https://cdn.icon-icons.com/icons2/836/PNG/128/Instagram_icon-icons.com_66804.png" alt=""> -->
+                <i class="fa-brands fa-whatsapp" style="color: rgb(23, 163, 23);"></i>
+                <i class="fab fa-youtube" style="color: rgb(231, 82, 82);"></i>
+                <i class="fab fa-facebook" style="color: rgb(14, 14, 241);"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        
+        
+            <p>Plateforme specialisee dans la preparation au TCF canada,tests a conditions reelles,sujets recents</p>
+        
+    </div>
+    <div class="w-90 px-3">
+        <p>Nous acceptons</p>
+        <div class="cadre-avfooter"></div>
+        <span><button><a href="#" class="bouton-cliquer">Cliquer</a></button></span>
+    </div>
+</div>
+
+ </main>
+</body>
+</html>

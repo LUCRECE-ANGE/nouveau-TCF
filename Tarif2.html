@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700">
+        <link href="output.css" rel="stylesheet">
+        <title>TCF_CANADA</title>
+        <style>
+          .l:hover{
+          
+            background-color: white;
+          }
+          .l a:hover{
+            color: black;
+          }
+          .colonne3{
+            width: 240px;
+            height: 100%;
+          }
+          .colonne4{
+            width: 240px;
+          }
+          .badge{
+            overflow: hidden;
+            clip-path: polygon(20% 0%, 89% 0%,150px 100%,0% 100%) ;
+          }
+           @media(max-width:400px){
+                .xs\:hidden{
+                    display: none !important;
+                }
+                .xm\:text-center{
+                    display: flex;
+                    padding: 5px 100px 5px 5px;
+                    padding-left: 100px;
+                    gap: 15px;
+                }
+                .xw\:block{
+                    display:flex;
+                }
+                .cadre{
+                  display: block;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <nav class="bg-blue-500 rounded h-10 m-0 text-white flex gap-10">
+            <div class="p-2 text-center xs:hidden">
+                <p class="xs:hidden"><b>BIENVENUE A LA FORMATION TCF CANADA</b></p>
+            </div>
+            <div class="flex gap-10 pl-80 md:flex xs:hidden ">
+                <div class="h-10 px-3  border-l "><a href="#" class=""><i class="fas fa-graduation-cap"></i> Formation</a></div>
+                <div class="h-10 px-3  border-l "><a href="Tarif.html"><i class="fas fa-tag"></i>Tarifs</a></div>
+                <div class="h-10 px-3  border-l "><a href="#"><i class="fas fa-envelope"></i>Contactez nous</a></div>
+            </div>
+            <div class="px-4 m-0 border-l xm:text-center">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </nav>
+        <i class="fa-solid fa-bars md:hidden md:text-center"></i>           
+    </header>
+    <main>
+        <div class="flex-row md:flex gap-10 align-items-end">
+            <img src="canada.png" alt="" class="md:w-20 md:20 md:m-8">
+            <div class="relative group">
+              <!-- Bouton principal -->
+              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+                <i class="fas fa-pencil"></i> EXPRESSION ECRITE
+              </a>
+            
+              <!-- Menu déroulant -->
+              <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden group-hover:block ">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <!-- Bouton principal -->
+              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+                <i class="fas fa-microphone"></i> EXPRESSION ORALE
+              </a>
+            
+              <!-- Menu déroulant -->
+              <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden group-hover:block">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
+              </div>
+            </div>
+            <div class="relative group">
+              <!-- Bouton principal -->
+              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+                <i class="fas fa-headphones-alt"></i> COMPREHENSION ORALE
+              </a>
+            </div>
+            <div class="relative group">
+              <!-- Bouton principal -->
+              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+                <i class="fas fa-book"></i> COMPREHENSION ECRITE
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" py-6  border-solid rounded text-center bg-blue-500 text-white fs-2xl font-bold">
+            <p>TARIFS</p>
+        </div>
+        <div class="text-center text-2xl mt-8">
+             <p class="text1 font-bold p-0 ">NOS FORFAITS <span class="text2 font-bold text-blue-700 ">POUR FORMATION</span>CHEZ NOUS</p>
+             <p class="text3 ">Faites vos choix , enregistrez-vous, et commencez aujourd'hui</p>
+        </div>
+    </main>
+</body>
+</html>

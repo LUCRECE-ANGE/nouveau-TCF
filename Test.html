@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: blue; /* Couleur de fond de la navbar */
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            height: 30px;
+        }
+
+        .nav-content a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .icones i {
+            margin: 0 10px;
+            color: white;
+        }
+
+        .formulaire {
+            margin: 20px auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 1px solid blue;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .formulaire input {
+            display: block;
+            border: 1px solid blue;
+            border-radius: 20px;
+            margin: 10px auto 20px;
+            width: 90%;
+            max-width: 200px;
+        }
+
+        .checkbox {
+            display: inline-flex;
+            padding: 0;
+            margin: 0;
+            gap: 5px;
+        }
+
+        button {
+            background-color: blue;
+            border-radius: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .dropdown {
+            margin: 10px;
+        }
+
+        .cadre-milieu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .colonne1, .colonne2, .colonne3, .colonne4 {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #003366; /* Couleur de fond du footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .link-list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none; /* Retire le style de liste */
+        }
+
+        .link-list a {
+            display: block; /* Pour un meilleur espacement */
+            margin: 5px 0; /* Ajout de marges entre les liens */
+            color: white; /* Couleur des liens */
+            text-decoration: none; /* Suppression de la décoration de texte */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nom">
+                <p><b>BIENVENUE A LA FORMATION TCF CANADA</b></p>
+            </div>
+            <div class="nav-content">
+                <a href="#"><i class="fas fa-graduation-cap"></i> Formation</a>
+                <a href="#"><i class="fas fa-tag"></i> Tarifs</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contactez nous</a>
+            </div>
+            <div class="icones">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="header2">
+            <img src="canada.png" alt="">
+            <div class="dropdown">
+                <a href="#"><i class="fas fa-pencil"></i> EXPRESSION ECRITE</a>
+                <div class="dropdown-content">
+                    <a href="#">Les sujets d'actualites</a>
+                    <a href="#">Methodologie</a>
+                    <a href="#">Correction des sujets d'expression ecrite</a>
+                    <a href="#">Plate-forme de redaction</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#"><i class="fas fa-microphone"></i> EXPRESSION ORALE</a>
+                <div class="dropdown-content">
+                    <a href="#">Les sujets d'actualites</a>
+                    <a href="#">Methodologie</a>
+                    <a href="#">Correction des sujets</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#"><i class="fas fa-headphones-alt"></i> COMPREHENSION ORALE</a>
+            </div>
+            <div>
+                <a href="#"><i class="fas fa-book"></i> COMPREHENSION ECRITE</a>
+            </div>
+        </div>
+
+        <div class="formulaire">
+            <img src="canada.png" alt="">
+            <form action="">
+                <input type="text" placeholder="Nom-utilisateur" required>
+                <input type="password" placeholder="Mot de passe" name="mot de passe" required>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">se souvenir de moi</label>
+                </div>
+                <button><a href="Test.html">SE CONNECTER</a></button>
+                <div>
+                    <a href="formulaire_inscription.html"> inscrire</a>
+                    <a href="#">mot de passe oublié?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="cadre-milieu">
+            <div class="colonne1">
+                <h2><b>Les pages</b></h2>
+                <div class="link-list">
+                    <a href="#"><i class="fas fa-home"></i> PAGE D'ACCUEIL</a>
+                    <a href="#"><i class="fas fa-book"></i> COMPREHENSION ECRITE</a>
+                    <a href="#"><i class="fas fa-pencil"></i> EXPRESSION ECRITE</a>
+                    <a href="#"><i class="fas fa-microphone"></i> EXPRESSION ORALE</a>
+                    <a href="#" class="politique">POLITIQUE DE REMBOURSEMENT</a>
+                </div>
+            </div>
+            <div class="colonne2">
+                <h2><b>Politique</b></h2>
+                <div class="link-list">
+                    <a href="#"><i class="fas fa-shield-alt"></i> POLITIQUE DE CONFIDENTIALITE</a>
+                    <a href="#"><i class="fas fa-blog"></i> BLOG</a>
+                    <a href="#">PARAMETRES DE COMPTE</a>
+                </div>
+                <div class="cadre3">
+                    <span><a href="Test.html" id="li"><i class="fas fa-sign-in-alt"></i> SE CONNECTER</a></span>
+                    <span><a href="formulaire_inscription.html" id="li"><i class="fas fa-user-plus"></i> S'INSCRIRE</a></span>
+                    <span><a href="#" id="li"><i class="fas fa-lock"></i> MOT DE PASSE</a></span>
+                </div>
+            </div>
+            <div class="colonne3">
+                <h2>Nos reseaux sociaux</h2>
+                <div class="reseaux">    
+                    <i class="fa-brands fa-whatsapp" style="color: rgb(23, 163, 23);"></i>
+                    <i class="fab fa-youtube" style="color: rgb(231, 82, 82);"></i>
+                    <i class="fab fa-facebook" style="color: rgb(14, 14, 241);"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <p>Plateforme specialisee dans la preparation au TCF canada, tests à conditions réelles, sujets récents.</p>
+            </div>
+            <div class="colonne4">
+                <p>Nous acceptons</p>
+                <div class="cadre-avfooter"></div>
+                <span><button><a href="#" class="bouton-cliquer">Cliquer</a></button></span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TCF Canada. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+
