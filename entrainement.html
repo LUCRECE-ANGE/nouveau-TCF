@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger Menu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700">
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+    <!-- Navbar -->
+  <nav class="bg-white md:bg-blue-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <img src="canada.png" alt="" class=" md:hidden h-16">
+
+        <!-- Hamburger Button -->
+        <button id="hamburger" class="flex flex-col justify-between w-6 h-6 md:hidden focus:outline-none">
+          <span class="block w-full h-1 bg-gray-800"></span>
+          <span class="block w-full h-1 bg-gray-800"></span>
+          <span class="block w-full h-1 bg-gray-800"></span>
+        </button>
+      </div>
+    </div>
+     <!-- Menu Links -->
+     <div id="menu" class="hidden md:flex space-x-4">
+     
+    </div>
+  </div>
+</div>
+
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2">
+      <!-- Menu principal -->
+      <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+        <span class="mr-2">🏠</span> Page d'accueil
+      </a>
+      <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+        <span class="mr-2">📖</span> Les séries de compréhensions
+      </a>
+      <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+        <span class="mr-2">🎓</span> Formation
+      </a>
+      <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+        <span class="mr-2">💳</span> Tarifs
+      </a>
+
+      <!-- Menu déroulant pour "Expression écrite" -->
+      <div class="relative">
+        <button id="toggle-expression" class="w-full text-left text-gray-800 hover:text-blue-600 flex items-center justify-between">
+          <div class="flex items-center">
+            <span class="mr-2">✍</span> Expression écrite
+          </div>
+          <span class="text-sm transition-transform">▾</span>
+        </button>
+
+        <!-- Sous-menus -->
+        <div id="expression-menu" class="hidden bg-gray-50 rounded-md mt-2 space-y-2 pl-6">
+          <a href="#" class="block text-gray-800 hover:text-blue-600">Sujets d'actualités</a>
+          <a href="#" class="block text-gray-800 hover:text-blue-600">Correction des sujets d'expression écrite</a>
+          <a href="#" class="block text-gray-800 hover:text-blue-600">Méthodologie</a>
+        </div>
+      </div>
+      <div class="relative">
+        <button id="toggle-expression" class="w-full text-left text-gray-800 hover:text-blue-600 flex items-center justify-between">
+          <div class="flex items-center">
+            <span class="mr-2">✍</span> Expression écrite
+          </div>
+          <span class="text-sm transition-transform">▾</span>
+        </button>
+
+        <!-- Sous-menus -->
+        <div id="expression-menu" class="hidden bg-gray-50 rounded-md mt-2 space-y-2 pl-6">
+          <a href="#" class="block text-gray-800 hover:text-blue-600">Sujets d'actualités</a>
+          <a href="#" class="block text-gray-800 hover:text-blue-600">Correction des sujets d'expression écrite</a>
+          <a href="#" class="block text-gray-800 hover:text-blue-600">Méthodologie</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <script>
+    // JavaScript pour afficher/cacher le menu mobile
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const toggleExpression = document.getElementById('toggle-expression');
+    const expressionMenu = document.getElementById('expression-menu');
+
+    // Toggle le menu mobile
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Toggle le sous-menu "Expression écrite"
+    toggleExpression.addEventListener('click', () => {
+      expressionMenu.classList.toggle('hidden');
+      // Rotation de la flèche
+      const arrow = toggleExpression.querySelector('span');
+      arrow.style.transform = expressionMenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+    });
+  </script>
+
+  
+    <!-- Tailwind styles for animation -->
+  <style>
+    #hamburger.open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    #hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    #hamburger.open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  </style>
+  
+</body>
+</html>

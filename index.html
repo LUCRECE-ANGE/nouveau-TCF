@@ -41,68 +41,135 @@
     </style>
 </head>
 <body class="body">
-    <header>
-        <nav class="bg-blue-500 rounded h-10 m-0 text-white flex gap-10">
-            <div class="p-2 text-center xs:hidden">
-                <p class="xs:hidden"><b>BIENVENUE A LA FORMATION TCF CANADA</b></p>
-            </div>
-            <div class="flex gap-10 pl-80 md:flex xs:hidden ">
-                <div class="h-10 px-3  border-l "><a href="#" class=""><i class="fas fa-graduation-cap"></i> Formation</a></div>
-                <div class="h-10 px-3  border-l "><a href="Tarif.html"><i class="fas fa-tag"></i>Tarifs</a></div>
-                <div class="h-10 px-3  border-l "><a href="#"><i class="fas fa-envelope"></i>Contactez nous</a></div>
-            </div>
-            <div class="px-4 m-0 border-l xm:text-center">
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
-        </nav>
-        <i class="fa-solid fa-bars md:hidden md:text-center"></i>           
-    </header>
-    <main>
-        <div class="flex-row md:flex gap-10 align-items-end">
-            <img src="canada.png" alt="" class="md:w-20 md:20 md:m-8">
-            <div class="relative group">
-              <!-- Bouton principal -->
-              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
-                <i class="fas fa-pencil"></i> EXPRESSION ECRITE
-              </a>
-            
-              <!-- Menu déroulant -->
-              <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden group-hover:block ">
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
-              </div>
-            </div>
-            <div class="relative group">
-              <!-- Bouton principal -->
-              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
-                <i class="fas fa-microphone"></i> EXPRESSION ORALE
-              </a>
-            
-              <!-- Menu déroulant -->
-              <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden group-hover:block">
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
-              </div>
-            </div>
-            <div class="relative group">
-              <!-- Bouton principal -->
-              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
-                <i class="fas fa-headphones-alt"></i> COMPREHENSION ORALE
-              </a>
-            </div>
-            <div class="relative group">
-              <!-- Bouton principal -->
-              <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
-                <i class="fas fa-book"></i> COMPREHENSION ECRITE
-              </a>
+  <header>
+    <nav class=" shadow-lg md:bg-blue-500 bg-white rounded h-10 m-0 text-white ">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between items-center h-10 md:h-16  mb-8" >
+            <!-- Logo -->
+            <img src="canada.png" alt="" class=" md:hidden h-10">
+    
+            <!-- Hamburger Button -->
+            <button id="hamburger" class="flex flex-col justify-between w-6 h-6 md:hidden focus:outline-none">
+              <span class="block w-full h-1 bg-gray-800 transition-transform duration-300 ease-in-out"></span>
+              <span class="block w-full h-1 bg-gray-800 transition-opacity duration-300 ease-in-out"></span>
+              <span class="block w-full h-1 bg-gray-800 transition-transform duration-300 ease-in-out"></span>
+            </button>
+    
+            <!-- Menu Links -->
+            <div id="menu" class="hidden md:flex space-x-4 ">
+                    <div class="p-2 text-center xs:hidden">
+                        <p class="xs:hidden"><b>BIENVENUE A LA FORMATION TCF CANADA</b></p>
+                    </div>
+                    <div class="flex gap-10 pl-80 md:flex xs:hidden ">
+                        <div class="h-16 px-3  border-l "><a href="#" class=""><i class="fas fa-graduation-cap"></i> Formation</a></div>
+                        <div class="h-10 px-3  border-l "><a href="tarif_tailwindcss.html"><i class="fas fa-tag"></i>Tarifs</a></div>
+                        <div class="h-10 px-3  border-l "><a href="#"><i class="fas fa-envelope"></i>Contactez nous</a></div>
+                    </div>
+                    <div class="px-4 m-0 border-l xm:text-center">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                
             </div>
           </div>
         </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-4 m-4 space-y-4">
+            <!-- Menu principal -->
+            <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+              <span class="mr-2">🏠</span> Page d'accueil
+            </a>
+            <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+              <span class="mr-2">📖</span> Les séries de compréhensions
+            </a>
+            <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+              <span class="mr-2">🎓</span> Formation
+            </a>
+            <a href="#" class="block text-gray-800 hover:text-blue-600 flex items-center">
+              <span class="mr-2">💳</span> Tarifs
+            </a>
+      
+            <!-- Menu déroulant pour "Expression écrite" -->
+            <div class="relative">
+              <button id="toggle-expression" class="w-full text-left text-gray-800 hover:text-blue-600 flex items-center justify-between">
+                <div class="flex items-center">
+                  <span class="mr-2">✍</span> Expression écrite
+                </div>
+                <span class="text-sm transition-transform">▾</span>
+              </button>
+      
+              <!-- Sous-menus -->
+              <div id="expression-menu" class="hidden bg-gray-50 rounded-md mt-2 space-y-2 pl-6">
+                <a href="#" class="block text-gray-800 hover:text-blue-600">Sujets d'actualités</a>
+                <a href="#" class="block text-gray-800 hover:text-blue-600">Correction des sujets d'expression écrite</a>
+                <a href="#" class="block text-gray-800 hover:text-blue-600">Méthodologie</a>
+              </div>
+            </div>
+            <div class="relative">
+              <button id="toggle-expression" class="w-full text-left text-gray-800 hover:text-blue-600 flex items-center justify-between">
+                <div class="flex items-center">
+                  <span class="mr-2">✍</span> Expression écrite
+                </div>
+                <span class="text-sm transition-transform">▾</span>
+              </button>
+      
+              <!-- Sous-menus -->
+              <div id="expression-menu" class="hidden bg-gray-50 rounded-md mt-2 space-y-2 pl-6">
+                <a href="#" class="block text-gray-800 hover:text-blue-600">Sujets d'actualités</a>
+                <a href="#" class="block text-gray-800 hover:text-blue-600">Correction des sujets d'expression écrite</a>
+                <a href="#" class="block text-gray-800 hover:text-blue-600">Méthodologie</a>
+              </div>
+            </div>
+          </div>
+      </nav>
+      <div class="hidden md:flex gap-10 align-items-end mt-4">
+        <img src="canada.png" alt="" class="md:w-20 md:20 md:m-8 h-16">
+        <div class="relative group">
+          <!-- Bouton principal -->
+          <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+            <i class="fas fa-pencil"></i> EXPRESSION ECRITE
+          </a>
+        
+          <!-- Menu déroulant -->
+          <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden ">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <!-- Bouton principal -->
+          <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+            <i class="fas fa-microphone"></i> EXPRESSION ORALE
+          </a>
+        
+          <!-- Menu déroulant -->
+          <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg hidden group-hover:block">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Les sujets d'actualités</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Méthodologie</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Correction des sujets</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <!-- Bouton principal -->
+          <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+            <i class="fas fa-headphones-alt"></i> COMPREHENSION ORALE
+          </a>
+        </div>
+        <div class="relative group">
+          <!-- Bouton principal -->
+          <a class="flex items-center px-4 py-2  font-medium rounded hover:text-blue-700 focus:outline-none">
+            <i class="fas fa-book"></i> COMPREHENSION ECRITE
+          </a>
+        </div>
+      </div>
+    </div> 
+</header>
+    <main>
+        
         <div class="bg-blue-500 m-10 mx-20">
           <div class="bg-gradient-to-r from-blue-400 to-purple-400 w-70 h-90 p-8 text-left">
               <p>BIENVENUE A VOUS</p>
@@ -168,7 +235,7 @@
                 <div ><img src="img2.png" alt=""></div>
                 <div class=""><img src="img3.png" alt=""></div>
               </div>
-              <div class="flex justify-between mt-auto h-20 ">
+              <div class="flex justify-between  h-20 ">
                 <div class="h-20"><img src="img5.png" alt=""></div>
                 <div><img class="h-1" src="img4.png" alt=""></div>
               </div>
